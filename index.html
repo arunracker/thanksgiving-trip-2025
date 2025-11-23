@@ -1441,6 +1441,20 @@
                 Complete all Austin shopping on Tuesday, Nov 25. Pack coolers for Wednesday travel.
             </div>
 
+            <div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
+                <div id="shopping-progress" style="flex: 1;">
+                    <div style="background: #f0f0f0; border-radius: 10px; height: 20px; overflow: hidden;">
+                        <div id="progress-bar" style="background: linear-gradient(135deg, #4CAF50, #45a049); height: 100%; width: 0%; transition: width 0.3s ease;"></div>
+                    </div>
+                    <p style="margin-top: 5px; color: #666; font-size: 14px;">
+                        <span id="progress-text">0 of 0 items checked</span>
+                    </p>
+                </div>
+                <button onclick="clearAllCheckboxes()" style="margin-left: 20px; padding: 8px 16px; background: #dc3545; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;">
+                    🔄 Clear All
+                </button>
+            </div>
+
             <div class="store-grid">
                 <!-- HEB Store -->
                 <div class="store-card">
@@ -1724,13 +1738,48 @@
             }
         });
         
-        // Save on change
+        // Update progress on load
+        updateShoppingProgress();
+        
+        // Save on change and update progress
         checkboxes.forEach(cb => {
             cb.addEventListener('change', function() {
                 localStorage.setItem(this.id, this.checked);
+                updateShoppingProgress();
             });
         });
     });
+    
+    // Update shopping progress bar
+    function updateShoppingProgress() {
+        const checkboxes = document.querySelectorAll('.checklist input[type="checkbox"]');
+        const total = checkboxes.length;
+        const checked = document.querySelectorAll('.checklist input[type="checkbox"]:checked').length;
+        const percentage = total > 0 ? (checked / total) * 100 : 0;
+        
+        const progressBar = document.getElementById('progress-bar');
+        const progressText = document.getElementById('progress-text');
+        
+        if (progressBar) {
+            progressBar.style.width = percentage + '%';
+        }
+        
+        if (progressText) {
+            progressText.textContent = `${checked} of ${total} items checked (${Math.round(percentage)}%)`;
+        }
+    }
+    
+    // Clear all checkboxes
+    function clearAllCheckboxes() {
+        if (confirm('Are you sure you want to clear all checked items? This will reset your shopping progress.')) {
+            const checkboxes = document.querySelectorAll('.checklist input[type="checkbox"]');
+            checkboxes.forEach(cb => {
+                cb.checked = false;
+                localStorage.removeItem(cb.id);
+            });
+            updateShoppingProgress();
+        }
+    }
 </script>
 
 </body>
