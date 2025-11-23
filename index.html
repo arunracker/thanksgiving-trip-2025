@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Thanksgiving Adventure 2025 | Austin to Broken Bow</title>
+    <meta name="description" content="7 Families Thanksgiving Trip Planning Guide">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+        :root {
+            --primary: #FF6B35;
+            --primary-dark: #E85A2C;
+            --secondary: #004E89;
+            --accent: #F7B32B;
+            --success: #06D6A0;
+            --danger: #EF476F;
+            --dark: #1A1A2E;
+            --light: #F8F9FA;
+            --white: #FFFFFF;
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.12);
+            --shadow-lg: 0 8px 32px rgba(0,0,0,0.16);
+            --radius: 16px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+            overflow-x: hidden;
+        }
+
+        /* Hero Header */
+        .hero {
+            background: linear-gradient(135deg, rgba(255,107,53,0.95), rgba(232,90,44,0.95)), 
+                        url('https://user-gen-media-assets.s3.amazonaws.com/seedream_images/c9e0bd7e-33f7-4458-8598-e1f303347c08.png') center/cover;
+            color: var(--white);
+            padding: 40px 20px 120px;
+            text-align: center;
+            position: relative;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: var(--light);
+            border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0 0 10px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            margin-bottom: 30px;
+        }
+
+        .trip-stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .stat-item {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 15px 25px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: -80px auto 0;
+            padding: 0 20px 100px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Navigation Tabs */
+        .nav-tabs {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding: 10px;
+            background: var(--white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            margin-bottom: 30px;
+            scrollbar-width: none;
+        }
+
+        .nav-tabs::-webkit-scrollbar { display: none; }
+
+        .tab-btn {
+            flex-shrink: 0;
+            background: transparent;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        .tab-btn.active {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .tab-icon { font-size: 1.3rem; }
+
+        /* Cards */
+        .card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            animation: slideUp 0.5s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--light);
+        }
+
+        .card-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .distance-badge {
+            background: linear-gradient(135deg, var(--secondary), #0066b3);
+            color: var(--white);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, var(--primary), var(--accent));
+            border-radius: 10px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -28px;
+            top: 5px;
+            width: 14px;
+            height: 14px;
+            background: var(--white);
+            border: 3px solid var(--primary);
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px rgba(255,107,53,0.2);
+        }
+
+        .time-badge {
+            background: linear-gradient(135deg, var(--accent), #FFD93D);
+            color: var(--dark);
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .activity-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--dark);
+        }
+
+        .activity-location {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--secondary);
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .activity-desc {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        /* Info Boxes */
+        .info-box {
+            background: linear-gradient(135deg, #E3F2FD, #BBDEFB);
+            border-left: 4px solid var(--secondary);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            font-size: 0.9rem;
+        }
+
+        .info-box.warning {
+            background: linear-gradient(135deg, #FFF3E0, #FFE0B2);
+            border-left-color: var(--accent);
+        }
+
+        .info-box.success {
+            background: linear-gradient(135deg, #E8F5E9, #C8E6C9);
+            border-left-color: var(--success);
+        }
+
+        .info-box.danger {
+            background: linear-gradient(135deg, #FFEBEE, #FFCDD2);
+            border-left-color: var(--danger);
+        }
+
+        /* Route Cards */
+        .route-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--white);
+            padding: 20px;
+            border-radius: var(--radius);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .route-info {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .route-label {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .route-value {
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        /* Option Toggles */
+        .option-selector {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .option-card {
+            background: var(--white);
+            border: 3px solid var(--light);
+            border-radius: var(--radius);
+            padding: 25px;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .option-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transform: scaleX(0);
+            transition: var(--transition);
+        }
+
+        .option-card:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-md);
+        }
+
+        .option-card.selected {
+            border-color: var(--primary);
+            background: linear-gradient(135deg, rgba(255,107,53,0.05), rgba(247,179,43,0.05));
+        }
+
+        .option-card.selected::before {
+            transform: scaleX(1);
+        }
+
+        .option-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .option-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--dark);
+        }
+
+        .option-badge {
+            background: var(--success);
+            color: var(--white);
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .option-badge.recommended {
+            background: var(--primary);
+        }
+
+        .option-details {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .option-stats {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        .option-stat {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        /* Checklist */
+        .checklist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 12px;
+            margin-bottom: 10px;
+            background: var(--light);
+            border-radius: 10px;
+            transition: var(--transition);
+        }
+
+        .checklist-item:hover {
+            background: #E3F2FD;
+        }
+
+        .checklist-item input[type="checkbox"] {
+            margin-right: 15px;
+            margin-top: 3px;
+            width: 20px;
+            height: 20px;
+            accent-color: var(--primary);
+            cursor: pointer;
+        }
+
+        .checklist-item label {
+            flex: 1;
+            cursor: pointer;
+        }
+
+        .poc-badge {
+            background: linear-gradient(135deg, var(--success), #00D494);
+            color: var(--white);
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        /* Comparison Table */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .comparison-item {
+            background: var(--light);
+            padding: 20px;
+            border-radius: var(--radius);
+            border: 2px solid transparent;
+            transition: var(--transition);
+        }
+
+        .comparison-item:hover {
+            border-color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .comparison-header {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .price-tag {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+        }
+
+        .feature-list li::before {
+            content: '✓';
+            color: var(--success);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .feature-list li.unavailable::before {
+            content: '✗';
+            color: #ccc;
+        }
+
+        /* Store Cards for Shopping */
+        .store-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .store-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: var(--radius);
+            padding: 20px;
+            border: 2px solid transparent;
+            transition: var(--transition);
+        }
+
+        .store-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .store-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(0,0,0,0.1);
+        }
+
+        .store-name {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .store-icon {
+            font-size: 1.5rem;
+        }
+
+        .assignee-badge {
+            background: linear-gradient(135deg, var(--accent), #FFD93D);
+            color: var(--dark);
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .item-count {
+            background: rgba(0,0,0,0.1);
+            color: var(--secondary);
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-top: 5px;
+            display: inline-block;
+        }
+
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+            box-shadow: var(--shadow-lg);
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 1000;
+        }
+
+        .fab:hover {
+            transform: scale(1.1) rotate(90deg);
+        }
+
+        /* Bottom Navigation */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            display: flex;
+            justify-content: space-around;
+            padding: 12px 0;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+            z-index: 999;
+            padding-bottom: max(12px, env(safe-area-inset-bottom));
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.7rem;
+            color: #999;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px 15px;
+            transition: var(--transition);
+            border-radius: 12px;
+        }
+
+        .nav-item.active {
+            color: var(--primary);
+            background: rgba(255,107,53,0.1);
+        }
+
+        .nav-icon {
+            font-size: 1.4rem;
+            margin-bottom: 4px;
+            transition: var(--transition);
+        }
+
+        .nav-item.active .nav-icon {
+            transform: scale(1.2);
+        }
+
+        /* Pages */
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+            animation: fadeInUp 0.5s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .hero { padding: 30px 15px 100px; }
+            .card { padding: 20px; }
+            .timeline { padding-left: 30px; }
+            .option-selector { grid-template-columns: 1fr; }
+            .trip-stats { gap: 15px; }
+            .stat-item { padding: 10px 15px; }
+        }
+
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: var(--white);
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, var(--secondary), #0066b3);
+        }
+
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>🦃 Thanksgiving Adventure 2025</h1>
+        <p class="hero-subtitle">Austin → Mt Vernon → Broken Bow → Dallas</p>
+        
+        <div class="trip-stats">
+            <div class="stat-item">
+                <span class="stat-number">7</span>
+                <span class="stat-label">Families</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">4</span>
+                <span class="stat-label">Days</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">550+</span>
+                <span class="stat-label">Miles</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <!-- Navigation Tabs -->
+    <div class="nav-tabs">
+        <button class="tab-btn active" onclick="showPage('overview')">
+            <span class="tab-icon">🗺️</span> Overview
+        </button>
+        <button class="tab-btn" onclick="showPage('wed')">
+            <span class="tab-icon">📅</span> Wednesday
+        </button>
+        <button class="tab-btn" onclick="showPage('thu')">
+            <span class="tab-icon">🦃</span> Thursday
+        </button>
+        <button class="tab-btn" onclick="showPage('fri')">
+            <span class="tab-icon">🌲</span> Friday
+        </button>
+        <button class="tab-btn" onclick="showPage('sat')">
+            <span class="tab-icon">🚗</span> Saturday
+        </button>
+        <button class="tab-btn" onclick="showPage('prep')">
+            <span class="tab-icon">📋</span> Prep
+        </button>
+    </div>
+
+    <!-- OVERVIEW PAGE -->
+    <div id="overview" class="page active">
+        
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">🗺️ Trip Route Overview</h2>
+            </div>
+
+            <div class="route-card">
+                <div class="route-info">
+                    <div class="route-label">Total Distance</div>
+                    <div class="route-value">~550 miles</div>
+                </div>
+                <div class="route-info">
+                    <div class="route-label">Driving Time</div>
+                    <div class="route-value">~11 hours</div>
+                </div>
+                <div class="route-info">
+                    <div class="route-label">States</div>
+                    <div class="route-value">TX, OK, AR</div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 30px; color: var(--secondary);">📍 Key Segments</h3>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="distance-badge">📏 195 miles • ⏱️ 3 hours</span>
+                    <div class="activity-title">Austin → Dallas</div>
+                    <div class="activity-location">📍 Via I-35 North</div>
+                    <div class="activity-desc">Major highway, expect traffic near Dallas metro area. Rest stops available every 50 miles.</div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="distance-badge">📏 104 miles • ⏱️ 1h 45m</span>
+                    <div class="activity-title">Dallas → Mt Vernon, TX</div>
+                    <div class="activity-location">📍 Via I-30 East</div>
+                    <div class="activity-desc">Smooth highway to your mansion base. Grocery shopping in Dallas before this leg!</div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="distance-badge">📏 120 miles • ⏱️ 2h 15m</span>
+                    <div class="activity-title">Mt Vernon → Broken Bow, OK</div>
+                    <div class="activity-location">📍 Via US-271 N → US-259 N</div>
+                    <div class="activity-desc">Scenic route through Paris, TX. Two-lane highways with beautiful countryside.</div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="distance-badge">📏 54 miles • ⏱️ 3-4 hours with stops</span>
+                    <div class="activity-title">Talimena Scenic Drive (Optional)</div>
+                    <div class="activity-location">📍 Talihina, OK → Mena, AR</div>
+                    <div class="activity-desc">Winding mountain road, 22 scenic vistas. NO gas stations on route!</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">🏠 Accommodation Details</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Spanish Style Mansion</strong><br>
+                📍 742 SE Access Rd, Mt Vernon, TX 75457<br>
+                🔑 Check-in: Nov 26, 3:00 PM<br>
+                🚪 Check-out: Nov 29, 11:00 AM<br>
+                👥 Capacity: 7 Families
+            </div>
+
+            <div class="info-box warning">
+                <strong>⚠️ Dallas Hotel (Saturday Night)</strong><br>
+                Need to book 7 rooms near I-30<br>
+                Recommended: Hampton Inn & Suites Dallas I-30 Cockrell Hill<br>
+                💰 ~$120-180 per room
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">🎯 Pre-Booked Activities</h2>
+            </div>
+
+            <div class="info-box success">
+                <strong>✅ CONFIRMED: Rugaru Adventures Zipline</strong><br>
+                📅 Friday, Nov 28 at 1:30-3:30 PM<br>
+                📍 2658 Stevens Gap Road, Broken Bow, OK<br>
+                ⏱️ Arrive by 1:00 PM for gear check<br>
+                👟 Closed-toe shoes required!
+            </div>
+        </div>
+
+    </div>
+
+    <!-- WEDNESDAY PAGE -->
+    <div id="wed" class="page">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">📅 Wednesday, Nov 26 - Travel Day</h2>
+                <span class="distance-badge">📏 299 miles total</span>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="time-badge">09:30 AM</span>
+                    <div class="activity-title">Depart Austin</div>
+                    <div class="activity-location">📍 Starting Point</div>
+                    <div class="activity-desc">
+                        All 7 families convoy starts! Convoy coordinator: <span class="poc-badge">Family 1</span>
+                    </div>
+                    <div class="info-box">
+                        <strong>Pre-Departure Checklist:</strong><br>
+                        ✓ Full gas tanks<br>
+                        ✓ Walkie-talkies/group chat active<br>
+                        ✓ Car snacks & entertainment<br>
+                        ✓ Emergency kit in each vehicle
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="time-badge">12:30 PM</span>
+                    <div class="activity-title">Lunch in Dallas</div>
+                    <div class="activity-location">📍 Dallas, TX • <span class="distance-badge">195 mi from Austin</span></div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="time-badge">02:15 PM</span>
+                    <div class="activity-title">Grocery Shopping Stop</div>
+                    <div class="activity-location">📍 Tom Thumb or Kroger, Dallas</div>
+                    <div class="activity-desc">
+                        <strong>Dallas Purchases (Fresh Items):</strong><br>
+                        🥛 Any Item? <br>
+                        <span class="poc-badge">Shopping Coordinator: Family 2</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="time-badge">04:00 PM</span>
+                    <div class="activity-title">Arrive Mt Vernon Mansion</div>
+                    <div class="activity-location">📍 742 SE Access Rd, Mt Vernon, TX • <span class="distance-badge">104 mi from Dallas</span></div>
+                    <div class="activity-desc">
+                        Check-in, unpack, assign rooms, tour property
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="time-badge">06:00 PM</span>
+                    <div class="activity-title">Easy Dinner & Settle In</div>
+                    <div class="activity-desc">
+                        Simple meal (order pizza or use brought items). Prep for Thanksgiving tomorrow.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="time-badge">08:00 PM</span>
+                    <div class="activity-title">Karaoke & Reels Night</div>
+                    <div class="activity-desc">
+                        Welcome celebration! Assign content creation team.<br>
+                        <span class="poc-badge">Activity Lead: Family 6</span><br>
+                        <span class="poc-badge">Reels Creator: Family 6</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- THURSDAY PAGE -->
+    <div id="thu" class="page">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">🦃 Thursday, Nov 27 - Thanksgiving</h2>
+            </div>
+
+            <div class="info-box success">
+                <strong>All Day at Mansion - No Travel!</strong><br>
+                Focus on food, family, and fun 🎉
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="time-badge">08:00 AM</span>
+                    <div class="activity-title">Breakfast & Macy's Parade</div>
+                    <div class="activity-desc">
+                        breakfast - Upma, Bread, Cereal etc.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="time-badge">10:00 AM</span>
+                    <div class="activity-title">Thanksgiving Cooking Begins</div>
+                    <div class="activity-desc">
+                        <strong>Family Assignments:</strong><br>
+                        • 1: Chicken & Main Protein<br>
+                        • 2: Mashed Potatoes & Gravy<br>
+                        • 3: Beaf<br>
+                        • 4: vegetable<br>
+                        <span class="poc-badge">Kitchen Coordinator: Family 3</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="time-badge">12:30 PM</span>
+                    <div class="activity-title">Games & Activities</div>
+                    <div class="activity-desc">
+                        While food cooks: Bingo, relay races, scavenger hunt<br>
+                        <span class="poc-badge">Games Lead: Family 4</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="time-badge">02:00 PM</span>
+                    <div class="activity-title">THE FEAST!</div>
+                    <div class="activity-desc">
+                        Group prayer, gratitude sharing, family photos, eat!
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="time-badge">04:00 PM</span>
+                    <div class="activity-title">Outdoor Activities</div>
+                    <div class="activity-desc">
+                        Touch football, cornhole, nature walks<br>
+                        <span class="poc-badge">Outdoor Lead: Family 2</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="time-badge">05:30 PM</span>
+                    <div class="activity-title">Dessert & Storytelling</div>
+                    <div class="activity-desc">
+                        Pie time! S'mores if fire pit available.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="time-badge">08:00 PM</span>
+                    <div class="activity-title">Game Night / Crafts</div>
+                    <div class="activity-desc">
+                        Kids board games, Adult Games<br>
+                        <span class="poc-badge">Craft Lead: Family 5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FRIDAY PAGE -->
+    <div id="fri" class="page">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">🌲 Friday, Nov 28 - Broken Bow Adventure</h2>
+                <span class="distance-badge">📏 240 miles round trip</span>
+            </div>
+
+            <div class="info-box danger">
+                <strong>🎯 RESERVED ACTIVITY:</strong> Rugaru Zipline 1:30-3:30 PM<br>
+                Must arrive by 1:00 PM! Plan accordingly.
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="time-badge">07:30 AM</span>
+                    <div class="activity-title">Depart Mt Vernon</div>
+                    <div class="activity-location">📍 Destination: Broken Bow, OK • <span class="distance-badge">120 miles • 2h 15m</span></div>
+                    <div class="activity-desc">
+                        Quick breakfast at mansion first. Pack snacks & water!<br>
+                        <strong>Route:</strong> US-271 N through Paris, TX → US-259 N into Oklahoma
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="time-badge">09:45 AM</span>
+                    <div class="activity-title">Beavers Bend Safari Park</div>
+                    <div class="activity-location">📍 589 Old Hochatown Rd, Broken Bow, OK</div>
+                    <div class="activity-desc">
+                        Drive-through safari with 300+ animals!<br>
+                        <span class="poc-badge">Ticket Coordinator: Family 4</span>
+                    </div>
+
+                    <div class="comparison-grid" style="margin-top: 15px;">
+                        <div class="comparison-item">
+                            <div class="comparison-header">General Admission</div>
+                            <div class="price-tag">$35</div>
+                            <ul class="feature-list">
+                                <li>Drive-Thru Safari (1.8 mi)</li>
+                                <li>Small Animal Walk-About</li>
+                                <li class="unavailable">Rhino Encounter</li>
+                                <li class="unavailable">Eland Feeding</li>
+                                <li class="unavailable">Animal Feed</li>
+                            </ul>
+                        </div>
+
+                        <div class="comparison-item" style="border: 3px solid var(--primary);">
+                            <div class="comparison-header">Ultimate Bundle 🌟</div>
+                            <div class="price-tag">$99</div>
+                            <ul class="feature-list">
+                                <li>Drive-Thru Safari</li>
+                                <li>Small Animal Walk-About</li>
+                                <li>Private Rhino Encounter</li>
+                                <li>Eland Hand-Feeding</li>
+                                <li>Tortoise & Kangaroo Meet</li>
+                                <li>Animal Feed Included</li>
+                            </ul>
+                            <div style="margin-top: 10px; padding: 8px; background: var(--primary); color: white; text-align: center; border-radius: 8px; font-size: 0.85rem;">
+                                <strong>RECOMMENDED</strong> for families!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="time-badge">12:00 PM</span>
+                    <div class="activity-title">Lunch in Hochatown</div>
+                    <div class="activity-location">📍 Hochatown, OK (near zipline)</div>
+                    <div class="activity-desc">
+                        <strong>Top Options:</strong><br>
+                        • Packed Lunch (sandwiches, salads)<br>
+                        • Grateful Head Pizza (creative pizzas, $12-20)<br>
+                        • Mountain Fork Brewery (burgers, local beers, $12-20)<br>
+                        • Shady Oaks (home-style cooking, $10-18)<br><br>
+                        <span class="poc-badge">Lunch Coordinator: Family 3</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="time-badge">01:00 PM</span>
+                    <div class="activity-title">Arrive at Rugaru Adventures</div>
+                    <div class="activity-location">📍 2658 Stevens Gap Rd, Broken Bow, OK</div>
+                    <div class="activity-desc">
+                        Arrive 30 min early for gear fitting & safety briefing
+                    </div>
+                    <div class="info-box warning">
+                        <strong>Requirements:</strong><br>
+                        • Weight: 70-250 lbs<br>
+                        • CLOSED-TOE SHOES (no sandals!)<br>
+                        • Comfortable clothing<br>
+                        • Hair tied back<br>
+                        • No loose items in pockets
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="time-badge">01:30-03:30 PM</span>
+                    <div class="activity-title">🎯 Choose Your Adventure!</div>
+                    <div class="activity-location">📍 Multiple Options Available</div>
+                    <div class="activity-desc">
+                        <div class="option-selector" style="margin-bottom: 20px;">
+                            <div class="option-card" style="padding: 15px;">
+                                <div class="option-header">
+                                    <div class="option-title" style="font-size: 1rem;">🎢 Zipline Tour</div>
+                                    <span class="option-badge recommended">Thrill Seekers</span>
+                                </div>
+                                <div class="option-details" style="font-size: 0.85rem;">
+                                    <strong>📍 Rugaru Adventures</strong><br>
+                                    • 6 ziplines, 3,500+ feet total<br>
+                                    • Soar through trees with lake views<br>
+                                    • Professional guides & safety gear<br>
+                                    • Weight: 70-250 lbs required<br>
+                                    • <strong>Duration:</strong> 2 hours
+                                </div>
+                            </div>
+                            
+                            <div class="option-card" style="padding: 15px;">
+                                <div class="option-header">
+                                    <div class="option-title" style="font-size: 1rem;">🧩 The Maze of Hochatown</div>
+                                    <span class="option-badge">Family Fun</span>
+                                </div>
+                                <div class="option-details" style="font-size: 0.85rem;">
+                                    <strong>📍 12206 N US Hwy 259</strong><br>
+                                    • Life-size outdoor maze adventure<br>
+                                    • Great for all ages<br>
+                                    • Team building & problem solving<br>
+                                    • Photo opportunities<br>
+                                    • <strong>Duration:</strong> 1-2 hours
+                                </div>
+                            </div>
+                            
+                            <div class="option-card" style="padding: 15px;">
+                                <div class="option-header">
+                                    <div class="option-title" style="font-size: 1rem;">🚣 Kayaking Adventure</div>
+                                    <span class="option-badge">Water Lovers</span>
+                                </div>
+                                <div class="option-details" style="font-size: 0.85rem;">
+                                    <strong>📍 Mountain Fork River</strong><br>
+                                    • Crystal clear water kayaking<br>
+                                    • Scenic river views<br>
+                                    • Wildlife spotting opportunities<br>
+                                    • Beginner friendly routes<br>
+                                    • <strong>Duration:</strong> 2-3 hours
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-box success">
+                            💡 <strong>Tip:</strong> Families can split up based on preferences! Meet back at 3:30 PM for the scenic drive.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="time-badge">03:45 PM</span>
+                    <div class="activity-title">Broken Bow Lake Scenic Drive</div>
+                    <div class="activity-location">📍 Stevens Gap Road along lake</div>
+                    <div class="activity-desc">
+                        Short 30-minute photo stop drive along lake shoreline.<br>
+                        Crystal-clear water, pine forests, multiple pull-offs.<br>
+                        <span class="poc-badge">Photo Lead: Family 5</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="time-badge">04:30 PM</span>
+                    <div class="activity-title">Return to Mt Vernon</div>
+                    <div class="activity-location">📍 <span class="distance-badge">120 miles • 2h 15m</span></div>
+                    <div class="activity-desc">
+                        Optional dinner stop in Paris, TX or return to mansion for leftovers/pizza
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SATURDAY PAGE -->
+    <div id="sat" class="page">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">🚗 Saturday, Nov 29 - Choose Your Adventure</h2>
+            </div>
+
+            <div class="option-selector">
+                <div class="option-card selected" onclick="selectOption('scenic')">
+                    <div class="option-header">
+                        <div class="option-title">Option A: Talimena Drive</div>
+                        <span class="option-badge recommended">Recommended</span>
+                    </div>
+                    <div class="option-details">
+                        Full scenic mountain drive experience with 8 major vista stops. Ends in Arkansas with direct route to Dallas.
+                    </div>
+                    <div class="option-stats">
+                        <span class="option-stat">📏 54 miles scenic</span>
+                        <span class="option-stat">⏱️ 3-4 hours</span>
+                        <span class="option-stat">🏔️ 8 stops</span>
+                    </div>
+                </div>
+
+                <div class="option-card" onclick="selectOption('relax')">
+                    <div class="option-header">
+                        <div class="option-title">Option B: Relaxed Local</div>
+                        <span class="option-badge">Easy Day</span>
+                    </div>
+                    <div class="option-details">
+                        Sleep in, explore Lake Cypress Springs, shorter drive to Dallas. Perfect for families wanting less driving.
+                    </div>
+                    <div class="option-stats">
+                        <span class="option-stat">📏 8 miles local</span>
+                        <span class="option-stat">⏱️ 2 hours</span>
+                        <span class="option-stat">🏖️ Lake visit</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OPTION A CONTENT -->
+            <div id="sat-scenic" class="option-content">
+                <div class="card" style="background: linear-gradient(135deg, rgba(255,107,53,0.05), rgba(247,179,43,0.05)); border: 2px solid var(--primary);">
+                    <h3 style="color: var(--primary);">🏔️ Talimena Scenic Drive Route</h3>
+                    
+                    <div class="info-box danger">
+                        <strong>⚠️ CRITICAL INFO:</strong><br>
+                        • NO gas stations on 54-mile route - fill up in Talihina!<br>
+                        • ONLY restrooms/food: Queen Wilhelmina State Park (mile 46)<br>
+                        • Winding mountain roads - drive carefully!
+                    </div>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="time-badge">07:30 AM</span>
+                            <div class="activity-title">Depart Mt Vernon</div>
+                            <div class="activity-location">📍 Destination: Talihina, OK • <span class="distance-badge">~120 miles • 2 hours</span></div>
+                            <div class="activity-desc">
+                                Pack up mansion, final breakfast, load vehicles. Head northwest via US-271 N.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="time-badge">09:30 AM</span>
+                            <div class="activity-title">Start Talimena Drive</div>
+                            <div class="activity-location">📍 Talihina, OK (Western Entrance)</div>
+                            <div class="activity-desc">
+                                <strong>⛽ FILL UP GAS HERE!</strong> Last station before drive.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="activity-title">Vista Stops (OKLAHOMA SIDE)</div>
+                            <div class="activity-desc">
+                                <strong>1. Choctaw Vista & Holson Valley Vista</strong> (Miles 2-3)<br>
+                                ⏱️ 15-20 min • 🎯 MUST STOP<br>
+                                First "WOW" moment! Wide valley views.<br><br>
+
+                                <strong>2. Panorama Vista</strong> (Mile 10)<br>
+                                ⏱️ 10-15 min • 🎯 MUST STOP<br>
+                                Sweeping Ouachita Mountain panorama.<br><br>
+
+                                <strong>3. Horse Thief Spring</strong> (Mile 12)<br>
+                                ⏱️ 10 min • Optional<br>
+                                Historic spring, shaded spot, close-up foliage.<br><br>
+
+                                <strong>4. Sunset Point Vista</strong> (Mile 18)<br>
+                                ⏱️ 10-15 min • Worth Stopping<br>
+                                West-facing overlook with expansive views.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="time-badge">11:30 AM</span>
+                            <div class="activity-title">Queen Wilhelmina State Park</div>
+                            <div class="activity-location">📍 Mile 46 (ARKANSAS SIDE)</div>
+                            <div class="activity-desc">
+                                <strong>🏔️ CROWN JEWEL - 30-45 minute stop</strong><br><br>
+                                
+                                <div class="info-box success">
+                                    <strong>Facilities Available:</strong><br>
+                                    • The Queen's Restaurant (hot lunch)<br>
+                                    • Clean modern restrooms<br>
+                                    • Gift shop<br>
+                                    • Walking trails & grounds<br>
+                                    • Historic lodge to explore<br>
+                                    • Spectacular overlook views
+                                </div>
+                                
+                                Perfect lunch & restroom break for entire group!
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="activity-title">Final Vista Stops (ARKANSAS)</div>
+                            <div class="activity-desc">
+                                <strong>6. Rich Mountain Fire Tower</strong> (Mile 47)<br>
+                                ⏱️ 15-20 min • 🎯 MUST STOP<br>
+                                Highest point (2,681 ft)! 360° views, walk to tower base.<br><br>
+
+                                <strong>7. Blue Haze Vista</strong> (Mile 50)<br>
+                                ⏱️ 10-15 min • Recommended<br>
+                                Mountains fade into blue haze effect.<br><br>
+
+                                <strong>8. Grand View Vista</strong> (Mile 52)<br>
+                                ⏱️ 10 min • Final overlook<br>
+                                Last views before Mena descent.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="time-badge">01:15 PM</span>
+                            <div class="activity-title">Depart Mena for Dallas</div>
+                            <div class="activity-location">📍 Mena, AR → Dallas, TX • <span class="distance-badge">~200 miles • 3.5 hours</span></div>
+                            <div class="activity-desc">
+                                Route: US-71 S through Arkansas → I-30 W to Dallas
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="time-badge">05:00 PM</span>
+                            <div class="activity-title">Check-in Dallas Hotel</div>
+                            <div class="activity-location">📍 Hampton Inn & Suites I-30 or similar</div>
+                            <div class="activity-desc">
+                                Dinner nearby, pool time, rest for Sunday drive home
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OPTION B CONTENT -->
+            <div id="sat-relax" class="option-content" style="display: none;">
+                <div class="card">
+                    <h3 style="color: var(--secondary);">🏖️ Relaxed Local Exploration</h3>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="time-badge">09:00 AM</span>
+                            <div class="activity-title">Leisurely Breakfast & Pack</div>
+                            <div class="activity-desc">
+                                Sleep in! No rush morning at mansion.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="time-badge">11:00 AM</span>
+                            <div class="activity-title">Checkout Mansion</div>
+                            <div class="activity-desc">
+                                Final cleaning, load vehicles<br>
+                                <span class="poc-badge">Checkout Lead: Family 6</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="time-badge">11:30 AM</span>
+                            <div class="activity-title">Lake Cypress Springs</div>
+                            <div class="activity-location">📍 8 miles south of Mt Vernon • <span class="distance-badge">15 min drive</span></div>
+                            <div class="activity-desc">
+                                <strong>Named "Most Beautiful Lake in Texas!"</strong><br><br>
+                                
+                                Activities:<br>
+                                • Scenic viewing areas<br>
+                                • Beach access (weather permitting)<br>
+                                • Fishing spots<br>
+                                • Picnic lunch<br>
+                                • Photography<br>
+                                • Kids can play on beach<br><br>
+                                
+                                ⏱️ 1-2 hour visit
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="time-badge">02:00 PM</span>
+                            <div class="activity-title">Drive to Dallas</div>
+                            <div class="activity-location">📍 <span class="distance-badge">104 miles • 1h 45m via I-30 W</span></div>
+                            <div class="activity-desc">
+                                Shorter, easier drive. Early arrival in Dallas.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="time-badge">04:00 PM</span>
+                            <div class="activity-title">Check-in Dallas Hotel (Early!)</div>
+                            <div class="activity-desc">
+                                Extra time to explore Dallas, longer pool time, or early dinner
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SHOPPING PAGE (NEW!) -->
+    <div id="prep" class="page">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">🛒 Complete Shopping List - Austin</h2>
+            </div>
+
+            <div class="info-box warning">
+                <strong>⏰ Buy Before Wednesday Morning Departure!</strong><br>
+                Complete all Austin shopping on Tuesday, Nov 25. Pack coolers for Wednesday travel.
+            </div>
+
+            <div class="store-grid">
+                <!-- HEB Store -->
+                <div class="store-card">
+                    <div class="store-header">
+                        <div class="store-name">
+                            <span class="store-icon">🛒</span> HEB
+                        </div>
+                        <span class="assignee-badge">👤 Dhanya</span>
+                    </div>
+                    <div class="item-count">32 items</div>
+                    <ul class="checklist" style="margin-top: 15px;">
+                        <li class="checklist-item"><input type="checkbox" id="heb1"><label for="heb1">Orange</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb2"><label for="heb2">Pineapple</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb3"><label for="heb3">Corn</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb4"><label for="heb4">Tray (serving)</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb5"><label for="heb5">Cups (disposable)</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb6"><label for="heb6">Bowls</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb7"><label for="heb7">Spoons</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb8"><label for="heb8">Lemon</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb9"><label for="heb9">Jam</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb10"><label for="heb10">Nutella</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb11"><label for="heb11">Potato</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb12"><label for="heb12">Apples</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb13"><label for="heb13">Red wine vinegar</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb14"><label for="heb14">Grapes</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb15"><label for="heb15">Pie (ready-made)</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb16"><label for="heb16">Walnut</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb17"><label for="heb17">Zucchini</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb18"><label for="heb18">Lettuce</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb19"><label for="heb19">Celery</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb20"><label for="heb20">Onion</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb21"><label for="heb21">Broth (chicken/vegetable)</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb22"><label for="heb22">Butter</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb23"><label for="heb23">Bread Cubes (stuffing)</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb24"><label for="heb24">Poultry spices</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb25"><label for="heb25">Cranberry sauce</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb26"><label for="heb26">Skewers</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb27"><label for="heb27">Trash bags</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb28"><label for="heb28">Small muffins</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb29"><label for="heb29">Cream cheese</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb30"><label for="heb30">Strawberry</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb31"><label for="heb31">Bagels</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb32"><label for="heb32">Pepper</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="heb33"><label for="heb33">Banana</label></li>
+                    </ul>
+                </div>
+
+                <!-- Costco -->
+                <div class="store-card">
+                    <div class="store-header">
+                        <div class="store-name">
+                            <span class="store-icon">🏪</span> Costco
+                        </div>
+                        <span class="assignee-badge">👤 Priya</span>
+                    </div>
+                    <div class="item-count">11 items (bulk sizes)</div>
+                    <ul class="checklist" style="margin-top: 15px;">
+                        <li class="checklist-item"><input type="checkbox" id="costco1"><label for="costco1">Plates (disposable, bulk)</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="costco2"><label for="costco2">Croissant (pack)</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="costco3"><label for="costco3">Chips/Snacks (bulk)</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="costco4"><label for="costco4">Cereal (large boxes)</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="costco5"><label for="costco5">Porotta (frozen)</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="costco6"><label for="costco6">Bread - White (large pack)</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="costco7"><label for="costco7">Bread - Wheat (large pack)</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="costco8"><label for="costco8">Cucumbers</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="costco9"><label for="costco9">Bell Peppers</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="costco10"><label for="costco10">Milk Tetra Pack (bulk)</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="costco11"><label for="costco11">Eggs (large pack)</label></li>
+                    </ul>
+                </div>
+
+                <!-- Indian Store -->
+                <div class="store-card">
+                    <div class="store-header">
+                        <div class="store-name">
+                            <span class="store-icon">🏪</span> Indian Store
+                        </div>
+                        <span class="assignee-badge">👤 Roshan</span>
+                    </div>
+                    <div class="item-count">21 items</div>
+                    <ul class="checklist" style="margin-top: 15px;">
+                        <li class="checklist-item"><input type="checkbox" id="indian1"><label for="indian1">Snacks (Indian)</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="indian2"><label for="indian2">Tea powder - Kannan Devan</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="indian3"><label for="indian3">Sugar</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="indian4"><label for="indian4">Rava</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="indian5"><label for="indian5">Onion</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="indian6"><label for="indian6">Shallots</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="indian7"><label for="indian7">Chilly</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="indian8"><label for="indian8">Garlic</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="indian9"><label for="indian9">Tomato</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="indian10"><label for="indian10">Curry leaves</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="indian11"><label for="indian11">Oil (from home)</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="indian12"><label for="indian12">Salt</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="indian13"><label for="indian13">Pickle</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="indian14"><label for="indian14">Jam</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="indian15"><label for="indian15">Strainer (from home)</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="indian16"><label for="indian16">Rice</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="indian17"><label for="indian17">Chapati (frozen)</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="indian18"><label for="indian18">Pickle (extra)</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="indian19"><label for="indian19">Yogurt</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="indian20"><label for="indian20">Puttu Powder</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="indian21"><label for="indian21">Coconut</label></li>
+                    </ul>
+                </div>
+
+                <!-- Marination/Meat -->
+                <div class="store-card">
+                    <div class="store-header">
+                        <div class="store-name">
+                            <span class="store-icon">🍗</span> Meat (Butcher/Grocery)
+                        </div>
+                        <span class="assignee-badge">👤 Harsha</span>
+                    </div>
+                    <div class="item-count">5 items</div>
+                    <div class="info-box warning" style="margin: 15px 0;">
+                        <strong>⚠️ Buy Fresh on Tuesday Evening</strong><br>
+                        Store in cooler for Wednesday travel
+                    </div>
+                    <ul class="checklist" style="margin-top: 15px;">
+                        <li class="checklist-item"><input type="checkbox" id="meat1"><label for="meat1">Whole Chicken - 1</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="meat2"><label for="meat2">Whole Chicken - 1 (backup)</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="meat3"><label for="meat3">Whole Chicken - 1 (extra)</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="meat4"><label for="meat4">Boneless Chicken</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="meat5"><label for="meat5">Prawns</label></li>
+                    </ul>
+                </div>
+
+                <!-- Per Family Items -->
+                <div class="store-card">
+                    <div class="store-header">
+                        <div class="store-name">
+                            <span class="store-icon">👨‍👩‍👧‍👦</span> Per Family
+                        </div>
+                    </div>
+                    <div class="item-count">Each family brings</div>
+                    <ul class="checklist" style="margin-top: 15px;">
+                        <li class="checklist-item"><input type="checkbox" id="fam1"><label for="fam1">Water (1 case per family)</label></li>
+                        <li class="checklist-item"><input type="checkbox" id="fam2"><label for="fam2">Kitchen Tissue (1 roll per family)</label></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 30px; background: linear-gradient(135deg, rgba(255,107,53,0.05), rgba(247,179,43,0.05)); border: 2px solid var(--primary);">
+                <h3 style="color: var(--primary); margin-top: 0;">🛍️ Dallas Indian Store (Optional Wednesday Stop)</h3>
+                <p><strong>Assignee:</strong> <span class="poc-badge">Harsha</span></p>
+                <ul class="checklist">
+                    <li class="checklist-item"><input type="checkbox" id="dallas1"><label for="dallas1">Food for Wednesday Dinner</label></li>
+                    <li class="checklist-item"><input type="checkbox" id="dallas2"><label for="dallas2">Evening Snacks</label></li>
+                    <li class="checklist-item"><input type="checkbox" id="dallas3"><label for="dallas3">Thursday Chicken Curry ingredients & Cutlet items</label></li>
+                </ul>
+            </div>
+
+            <div class="card" style="margin-top: 20px;">
+                <h3 style="color: var(--secondary); margin-top: 0;">🍌 Oklahoma Store (Optional Friday)</h3>
+                <ul class="checklist">
+                    <li class="checklist-item"><input type="checkbox" id="ok1"><label for="ok1">Banana (if needed)</label></li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">📞 Important Contacts</h2>
+            </div>
+
+            <div class="info-box danger">
+                <strong>🚨 Emergency: 911</strong>
+            </div>
+
+            <h4 style="margin-top: 20px;">🏨 Accommodations</h4>
+            <div class="info-box">
+                <strong>Mt Vernon Mansion</strong><br>
+                📍 742 SE Access Rd, Mt Vernon, TX 75457<br>
+                🔑 Check-in: Nov 26 @ 3:00 PM<br>
+                🚪 Check-out: Nov 29 @ 11:00 AM
+            </div>
+
+            <h4 style="margin-top: 20px;">🎯 Activities</h4>
+            <div class="info-box">
+                <strong>Rugaru Adventures</strong><br>
+                📞 (580) 317-1634<br>
+                📍 2658 Stevens Gap Rd, Broken Bow, OK<br>
+                🎟️ Reservation: Fri Nov 28 @ 1:30 PM
+            </div>
+
+            <div class="info-box">
+                <strong>Beavers Bend Safari Park</strong><br>
+                📞 (580) 584-6036<br>
+                📍 589 Old Hochatown Rd, Broken Bow, OK<br>
+                🕒 Opens daily 9:30 AM
+            </div>
+
+            <div class="info-box">
+                <strong>Queen Wilhelmina State Park</strong><br>
+                📞 (479) 394-2863<br>
+                📍 Mile 46, Talimena Scenic Drive<br>
+                🍽️ Restaurant & facilities available
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Floating Action Button -->
+<div class="fab" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    ⬆️
+</div>
+
+<!-- Bottom Navigation -->
+<nav class="bottom-nav">
+    <button class="nav-item active" onclick="showPage('overview')">
+        <span class="nav-icon">🗺️</span>
+        <span>Overview</span>
+    </button>
+    <button class="nav-item" onclick="showPage('wed')">
+        <span class="nav-icon">📅</span>
+        <span>Wed</span>
+    </button>
+    <button class="nav-item" onclick="showPage('thu')">
+        <span class="nav-icon">🦃</span>
+        <span>Thu</span>
+    </button>
+    <button class="nav-item" onclick="showPage('fri')">
+        <span class="nav-icon">🌲</span>
+        <span>Fri</span>
+    </button>
+    <button class="nav-item" onclick="showPage('sat')">
+        <span class="nav-icon">🚗</span>
+        <span>Sat</span>
+    </button>
+    <button class="nav-item" onclick="showPage('prep')">
+        <span class="nav-icon">📋</span>
+        <span>Prep</span>
+    </button>
+</nav>
+
+<script>
+    // Page Navigation
+    function showPage(pageId) {
+        // Remove active from all
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+        document.querySelectorAll('.tab-btn').forEach(t => t.classList.remove('active'));
+        
+        // Activate selected
+        document.getElementById(pageId).classList.add('active');
+        event.currentTarget.classList.add('active');
+        
+        // Scroll to top
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+
+    // Saturday Option Selection
+    function selectOption(option) {
+        const scenicContent = document.getElementById('sat-scenic');
+        const relaxContent = document.getElementById('sat-relax');
+        const cards = document.querySelectorAll('.option-card');
+        
+        cards.forEach(c => c.classList.remove('selected'));
+        
+        if (option === 'scenic') {
+            scenicContent.style.display = 'block';
+            relaxContent.style.display = 'none';
+            cards[0].classList.add('selected');
+        } else {
+            scenicContent.style.display = 'none';
+            relaxContent.style.display = 'block';
+            cards[1].classList.add('selected');
+        }
+    }
+
+    // Checklist persistence (localStorage)
+    document.addEventListener('DOMContentLoaded', function() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        
+        // Load saved states
+        checkboxes.forEach(cb => {
+            const saved = localStorage.getItem(cb.id);
+            if (saved === 'true') {
+                cb.checked = true;
+            }
+        });
+        
+        // Save on change
+        checkboxes.forEach(cb => {
+            cb.addEventListener('change', function() {
+                localStorage.setItem(this.id, this.checked);
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
